@@ -57,3 +57,11 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+Rake::Task["release"].clear
+desc "Release a gem to gemfury"
+task :release => [:clean, :build] do
+  version = File.read('VERSION')
+  pkg_name = "moxie-mongo_watchable-#{version}.gem"
+  puts `fury push pkg/#{pkg_name}`
+end

@@ -4,8 +4,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{mongo_watchable}
-  s.version = "0.2.4"
+  s.name = %q{moxie-mongo_watchable}
+  s.version = "0.2.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jonathan Bell"]
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
      "lib/mongo_watchable/watchable.rb",
      "lib/mongo_watchable/watcher.rb"
   ]
-  s.homepage = %q{http://github.com/jonbell/mongo_watchable}
+  s.homepage = %q{https://github.com/moxiespaces/moxie-mongo_watchable}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
